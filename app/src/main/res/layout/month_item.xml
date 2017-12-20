@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/month_name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="March 2017"
+        android:textSize="18sp"
+        android:layout_marginLeft="12dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/month_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

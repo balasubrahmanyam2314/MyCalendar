@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyCustomCalender</string>
+    <string name="todo">TODO</string>
+    <string name="beauty_and_the_beast_label">Beauty and the Beast</string>
+</resources>

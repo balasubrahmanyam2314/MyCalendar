@@ -1,0 +1,13 @@
+/build
+.externalNativeBuild
+local.properties
+# Android Studio / Intellij
+*.iml
+.gradle/
+gradle/
+/local.properties
+.idea
+.DS_Store
+build/
+/captures
+*.apk
