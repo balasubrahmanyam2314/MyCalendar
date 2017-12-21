@@ -11,6 +11,8 @@ public class DayModel {
     private String costOfDay;
     private Calendar calendar;
     private boolean isDaySelected;
+    private boolean isDisabled;
+    private boolean isNeedToShow;
 
     public String getDay() {
         return day;
@@ -42,5 +44,21 @@ public class DayModel {
 
     public void setDaySelected(boolean daySelected) {
         isDaySelected = daySelected;
+    }
+
+    public boolean isDisabled() {
+        return isDisabled;
+    }
+
+    public void setDisabled(boolean disabled) {
+        isDisabled = disabled;
+    }
+
+    public boolean isNeedToShow() {
+        return isNeedToShow;
+    }
+
+    public void setNeedToShow(boolean needToShow) {
+        isNeedToShow = needToShow;
     }
 }

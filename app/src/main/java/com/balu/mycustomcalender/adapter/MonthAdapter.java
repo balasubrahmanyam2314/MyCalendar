@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.balu.mycustomcalender.CalenderRecyclerViewActivity;
 import com.balu.mycustomcalender.ItemOffsetDecoration;
 import com.balu.mycustomcalender.R;
 import com.balu.mycustomcalender.interfaces.OnDayClickListener;
@@ -30,7 +29,6 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.CalenderView
         this.context = context;
         this.monthModelList = monthModelList;
         this.dayClickListener = dayClickListener;
-        setHasStableIds(true);
     }
 
 

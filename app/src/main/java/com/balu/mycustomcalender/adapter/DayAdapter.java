@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,11 +47,18 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.MonthViewHolder>
     public void onBindViewHolder(final MonthViewHolder holder, final int position) {
         final DayModel dayModel = dayModelList.get(position);
         holder.day.setText(dayModel.getDay());
+
+        if (dayModel.isNeedToShow()) {
+            holder.itemView.setVisibility(View.VISIBLE);
+        } else {
+            holder.itemView.setVisibility(View.INVISIBLE);
+        }
         if (dayModel.isDaySelected()) {
             holder.itemView.setBackgroundColor(applyColor(R.color.green));
         } else {
             holder.itemView.setBackgroundColor(applyColor(R.color.transparent));
         }
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +69,7 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.MonthViewHolder>
                 }
             }
         });
+
     }
 
     private int applyColor(@ColorRes int colorId) {
