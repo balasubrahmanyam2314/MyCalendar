@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCalendarView">
+    <attr name="firstDayOfTheWeek" format="enum">
+        <enum name="sunday" value="1" />
+        <enum name="monday" value="2" />
+        <enum name="tuesday" value="3" />
+        <enum name="wednesday" value="4" />
+        <enum name="thursday" value="5" />
+        <enum name="friday" value="6" />
+        <enum name="saturday" value="7" />
+    </attr>
+
+    <attr name="selectionType" format="enum">
+        <enum name="single" value="0" />
+        <enum name="multiple" value="1" />
+        <enum name="range" value="2" />
+        <enum name="none" value="3" />
+    </attr>
+    </declare-styleable>
+</resources>

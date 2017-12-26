@@ -95,8 +95,8 @@ public class CalenderRecyclerViewActivity extends AppCompatActivity implements O
 
     @Override
     public void onDayClick(DayModel dayModel) {
-        if (dayModel.getCalendar()!=null)
-        Toast.makeText(this, convertDateToString("dd-MM-yyyy", dayModel.getCalendar()), Toast.LENGTH_SHORT).show();
+//        if (dayModel.getCalendar()!=null)
+//        Toast.makeText(this, convertDateToString("dd-MM-yyyy", dayModel.getCalendar()), Toast.LENGTH_SHORT).show();
     }
 
 
